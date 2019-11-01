@@ -14,3 +14,10 @@
 
 #### 协议接口
 * 位于根目录下doc.pdf文件
+
+#### 运行截图
+![code](https://s2.ax1x.com/2019/11/01/Kbpvxs.jpg)
+![code](https://s2.ax1x.com/2019/11/01/Kbpj2j.jpg)
+![code](https://s2.ax1x.com/2019/11/01/KbpXGQ.jpg)
+![code](https://s2.ax1x.com/2019/11/01/KbpOPg.jpg)
+![code](https://s2.ax1x.com/2019/11/01/KbpqIS.jpg)
