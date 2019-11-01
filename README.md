@@ -1,5 +1,9 @@
 # Transport
 
+![build](https://img.shields.io/badge/build-passing-green.svg)
+![langeage](https://img.shields.io/badge/language-java-blue.svg)
+![Releases](https://img.shields.io/badge/android-5.0%2B-brightgreen.svg)
+
 基于联想智能交通仿真沙盘系统开发的功能客户端
 
 
