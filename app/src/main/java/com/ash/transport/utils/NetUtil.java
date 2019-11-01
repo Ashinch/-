@@ -32,7 +32,6 @@ public class NetUtil {
     private static final int CONNECT_TIME = 1000 * 3;   // 连接超时限制 3秒
 
     // [非主线程](子线程)中进行UI相关操作
-    // 需要使用 Looper.getMainLooper() 初始化 handel
     private Handler handler = new Handler(Looper.getMainLooper());
 
     // 定义 [响应事件监听器] 公开接口
@@ -160,10 +159,6 @@ public class NetUtil {
          *  服务器返回的每条数据都包裹在 serverinfo 键内
          *  应提前剔除 serverinfo 键，取出其中的数据方便后续使用
          *---------------------------------------------------------
-         *  (json格式文本可以使用花括号进行json内嵌套json)
-         *  (json格式文本是用来储存 键值对 的相互关系)
-         *  (json格式文本中，冒号前面代表键，冒号后面代表该键的值)
-         *  (在json的数据格式中，字符串值使用单引号或双引号包裹，整数值则不需要包裹)
          */
 
         // 取出 serverinfo 键内数据作为结果字符串
@@ -198,8 +193,6 @@ public class NetUtil {
                         e.printStackTrace();
                     }
 
-                    // 利用监听器接口触发事件
-                    // 在子线程中，[安全]回调数据的正确方法之一：
                     // 向 响应事件监听器接口 成功事件 传递服务器结果
                     listener.success(result);
                 }

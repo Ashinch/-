@@ -77,7 +77,6 @@ public class ChargeActivity extends BaseActivity implements View.OnClickListener
             ToastFactory.show(ChargeActivity.this, "网络不可用！");
         }
 
-        // Android 规范是以 包名+类名+变量名 来命名意图传值键名
         carId = getIntent().getIntExtra("com.ash.transport.ui.fragment.CarFragment.carId", 0);
         tvCarId.setText(carId + "");
         btnMoney20.setOnClickListener(this);
